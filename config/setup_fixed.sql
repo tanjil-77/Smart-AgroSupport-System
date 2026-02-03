@@ -141,16 +141,23 @@ INSERT INTO users (name, email, phone, password, role, is_verified) VALUES
 
 -- Insert Sample Crops
 INSERT INTO crops (id, name_en, name_bn, category) VALUES
-(1, 'Rice', 'Dhaan', 'Grain'),
-(2, 'Wheat', 'Gom', 'Grain'),
-(3, 'Potato', 'Alu', 'Vegetable'),
-(4, 'Onion', 'Peyaj', 'Vegetable'),
-(5, 'Tomato', 'Tomato', 'Vegetable'),
-(6, 'Jute', 'Pat', 'Fiber'),
-(7, 'Corn', 'Bhutta', 'Grain'),
-(8, 'Lentil', 'Dal', 'Pulse'),
-(9, 'Mustard', 'Sarisha', 'Oil Seed'),
-(10, 'Sugarcane', 'Akh', 'Cash Crop');
+(1, 'Rice', 'ধান', 'Grain'),
+(2, 'Wheat', 'গম', 'Grain'),
+(3, 'Potato', 'আলু', 'Vegetable'),
+(4, 'Onion', 'পেঁয়াজ', 'Vegetable'),
+(5, 'Tomato', 'টমেটো', 'Vegetable'),
+(6, 'Jute', 'পাট', 'Fiber'),
+(7, 'Corn', 'ভুট্টা', 'Grain'),
+(8, 'Lentil', 'মসুর ডাল', 'Pulse'),
+(9, 'Mustard', 'সরিষা', 'Oil Seed'),
+(10, 'Sugarcane', 'আখ', 'Cash Crop'),
+(11, 'Garlic', 'রসুন', 'Vegetable'),
+(12, 'Eggplant', 'বেগুন', 'Vegetable'),
+(13, 'Chili', 'মরিচ', 'Vegetable'),
+(14, 'Bean', 'শিম', 'Vegetable'),
+(15, 'Papaya', 'পেপে', 'Fruit'),
+(16, 'Bottle Gourd', 'লাউ', 'Vegetable'),
+(17, 'Sweet Pumpkin', 'মিষ্টি কুমড়া', 'Vegetable');
 
 -- Insert Sample Weather Advisory Rules
 INSERT INTO weather_advisory (weather_condition, advisory_bn, advisory_en, priority) VALUES
