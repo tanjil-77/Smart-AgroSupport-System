@@ -708,8 +708,8 @@ $stats['total_farmers'] = $conn->query("SELECT COUNT(DISTINCT farmer_id) as coun
             const modal = document.createElement('div');
             modal.className = 'position-fixed top-50 start-50 translate-middle';
             modal.style.zIndex = '9999';
-            modal.style.minWidth = '320px';
-            modal.style.maxWidth = '400px';
+            modal.style.width = '90%';
+            modal.style.maxWidth = '380px';
             modal.style.animation = 'fadeInUp 0.6s ease-out';
             modal.innerHTML = `
                 <div style="
@@ -754,7 +754,7 @@ $stats['total_farmers'] = $conn->query("SELECT COUNT(DISTINCT farmer_id) as coun
                                 color: #00695c;
                                 font-weight: 900;
                                 margin: 0.5rem 0 0.5rem 2rem;
-                                font-size: 1rem;
+                                font-size: 0.95rem;
                                 word-break: break-all;
                             ">wa.me/${phone}</p>
                         </div>
@@ -774,8 +774,9 @@ $stats['total_farmers'] = $conn->query("SELECT COUNT(DISTINCT farmer_id) as coun
                                 color: #00897b;
                                 font-weight: 900;
                                 margin: 0.5rem 0 0 2rem;
-                                font-size: 1.1rem;
-                                letter-spacing: 2px;
+                                font-size: 1rem;
+                                letter-spacing: 1px;
+                                word-break: break-all;
                             ">${phone}</p>
                         </div>
                     </div>
@@ -914,9 +915,11 @@ $stats['total_farmers'] = $conn->query("SELECT COUNT(DISTINCT farmer_id) as coun
             const alertBox = document.createElement('div');
             alertBox.className = 'position-fixed top-50 start-50 translate-middle';
             alertBox.style.zIndex = '9999';
-            alertBox.style.minWidth = '320px';
-            alertBox.style.maxWidth = '450px';
+            alertBox.style.width = '92%';
+            alertBox.style.maxWidth = '420px';
             alertBox.style.animation = 'fadeInUp 0.6s ease-out';
+            alertBox.style.maxHeight = '90vh';
+            alertBox.style.overflowY = 'auto';
             alertBox.innerHTML = `
                 <div style="
                     background: linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(240,250,255,0.98) 100%);
@@ -940,7 +943,8 @@ $stats['total_farmers'] = $conn->query("SELECT COUNT(DISTINCT farmer_id) as coun
                         font-weight: 900;
                         margin-bottom: 1.5rem;
                         text-shadow: 2px 2px 4px rgba(255,255,255,1);
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
+                        word-break: break-word;
                     ">${cropName}</h3>
                     
                     <div style="background: rgba(17,153,142,0.08); border-left: 4px solid #00897b; padding: 1.2rem; border-radius: 10px; margin-bottom: 1.5rem;">
@@ -948,7 +952,8 @@ $stats['total_farmers'] = $conn->query("SELECT COUNT(DISTINCT farmer_id) as coun
                             color: #1a237e;
                             font-weight: 800;
                             margin: 0.8rem 0;
-                            font-size: 1rem;
+                            font-size: 0.95rem;
+                            word-break: break-word;
                         ">
                             <i class="fas fa-weight" style="width: 25px; color: #7c4dff;"></i>
                             <strong>পরিমাণ:</strong> ${quantity}
