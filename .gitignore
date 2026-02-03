@@ -1,0 +1,19 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+
+# Logs
+*.log
+
+# Local cache/temp
+*.tmp
+*.temp
+
+# PHP / Composer (if used later)
+/vendor/
+
+# Environment files
+.env
+.env.*
